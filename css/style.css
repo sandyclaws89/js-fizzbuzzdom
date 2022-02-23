@@ -6,6 +6,11 @@
 .container{
     max-width: 750px;
 }
+/* .box-contanier{
+    width: 4rem;
+    height: 4rem;
+    background-color: aqua;
+} */
 
 .box{
     width: 4rem;
