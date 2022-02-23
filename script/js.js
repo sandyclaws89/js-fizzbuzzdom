@@ -23,23 +23,27 @@ let insideBox = document.querySelector(`.box-container`);
 insideBox=0;
 // let=0;
 
-    for (var i=1; i<=100; i++){
+    for (var i=1; i<=100; ++i){
     
-        if (i % 3 == 0) {
-            insideBox.innerHTML = insideBox.innerHTML + `<div class="box">Buzz<div>`;
+        if (i % 15 ==0 && i % 3==0){
+            insideBox.innerHTML = insideBox.innerHTML + `<div class="box">FizzBuzz<div>`;
+            console.log(`FizzBuzz`);
+           
         } else if (i % 5 ==0){
             insideBox.innerHTML = insideBox.innerHTML + `<div class="box">Fizz<div>`;
-        } else if (i % 15 ==0){
-            insideBox.innerHTML = insideBox.innerHTML + `<div class="box">FizzBuzz<div>`;
+            console.log(`Fizz`);
+        } else if  (i % 3 == 0) {
+            insideBox.innerHTML = insideBox.innerHTML + `<div class="box">Buzz<div>`;
+            console.log(`Buzz`);
         }
         else {
             insideBox.innerHTML = insideBox.innerHTML + `<div class="box">${i}<div>`;
             // console.log(i);
         }
-
-        console.log(i);
+            console.log(i);
         }
        
+        // console.log(i);
 
 
     
